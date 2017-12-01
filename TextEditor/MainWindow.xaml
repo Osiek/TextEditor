@@ -12,17 +12,17 @@
         <CommandBinding Command="ApplicationCommands.Save" Executed="SaveDocument" CanExecute="commandCanExecute"></CommandBinding>
         <CommandBinding Command="ApplicationCommands.SaveAs" Executed="SaveDocumentAs" CanExecute="commandCanExecute"></CommandBinding>
     </Window.CommandBindings>
-    <DockPanel>
+    <DockPanel LastChildFill="True">
         <local:TextEditorMenu DockPanel.Dock="Top" />
         <local:TextEditorToolbar DockPanel.Dock="Top" />
         <local:FontToolbar DockPanel.Dock="Top" x:Name="FontToolbar"/>
-        <RichTextBox Name="body" Height="150px" SpellCheck.IsEnabled="True" AcceptsReturn="True" AcceptsTab="True" BorderThickness="0 2 0 0" TextChanged="bodyTextChanged">
-            
-        </RichTextBox>
-        <StatusBar DockPanel.Dock="Bottom" Height="20px" Width="150px">
+        <StatusBar DockPanel.Dock="Bottom" Height="30px">
             <StatusBarItem Height="30px">
                 <TextBlock Name="status" Text="Status bar" />
             </StatusBarItem>
         </StatusBar>
+        <RichTextBox DockPanel.Dock="Top" Name="body" SpellCheck.IsEnabled="True" AcceptsReturn="True" AcceptsTab="True" BorderThickness="0 2 0 0" TextChanged="bodyTextChanged">
+        </RichTextBox>
+
     </DockPanel>
 </Window>
