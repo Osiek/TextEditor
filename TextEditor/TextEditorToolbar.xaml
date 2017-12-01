@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="TextEditor.TextEditorToolbar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TextEditor"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="300">
+    <ToolBar Name="toolbar" DockPanel.Dock="Top" Height="40px">
+            <Button ToolTip="Open file" Command="ApplicationCommands.Open">
+                <Image Source="icons\open.png" />
+            </Button>
+        <Button ToolTip="Save file" Command="ApplicationCommands.Save">
+            <Image Source="icons\save.png" />
+        </Button>
+    </ToolBar>
+</UserControl>
